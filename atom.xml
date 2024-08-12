@@ -17,27 +17,6 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello 测试文本</title>
-    <link href="https://ruikey.cn/posts/2013454d.html"/>
-    <id>https://ruikey.cn/posts/2013454d.html</id>
-    <published>2024-08-09T10:19:03.000Z</published>
-    <updated>2024-08-10T14:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1>Hello</h1><p>这是一篇测试文章。进入web部署的世界</p>]]></content>
-    
-    
-    <summary type="html">这是一篇测试文章。</summary>
-    
-    
-    
-    <category term="其他" scheme="https://ruikey.cn/categories/%E5%85%B6%E4%BB%96/"/>
-    
-    
-    <category term="Markdown" scheme="https://ruikey.cn/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
     <title>NCF论文研读笔记</title>
     <link href="https://ruikey.cn/posts/2013454d.html"/>
     <id>https://ruikey.cn/posts/2013454d.html</id>
@@ -57,6 +36,27 @@
     
     <category term="人工智能" scheme="https://ruikey.cn/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Hello 测试文本</title>
+    <link href="https://ruikey.cn/posts/2013454d.html"/>
+    <id>https://ruikey.cn/posts/2013454d.html</id>
+    <published>2024-08-09T10:19:03.000Z</published>
+    <updated>2024-08-10T14:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1>Hello</h1><p>这是一篇测试文章。进入web部署的世界</p>]]></content>
+    
+    
+    <summary type="html">这是一篇测试文章。</summary>
+    
+    
+    
+    <category term="其他" scheme="https://ruikey.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="Markdown" scheme="https://ruikey.cn/tags/Markdown/"/>
     
   </entry>
   
