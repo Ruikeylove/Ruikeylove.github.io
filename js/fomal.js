@@ -1113,27 +1113,32 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("08/10/2024 12:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
-    `Future is now 🍭🍭🍭`,
+    `欢迎来到Ruikey🥝の小家!`,
+    `熬得过万丈孤独，藏得下星辰大海 🍭🍭🍭`,
     `
         
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
+ _______   __    __  ______  __    __  ________  __      __ 
+ /       \ /  |  /  |/      |/  |  /  |/        |/  \    /  |
+$$$$$$$  |$$ |  $$ |$$$$$$/ $$ | /$$/ $$$$$$$$/ $$  \  /$$/ 
+$$ |__$$ |$$ |  $$ |  $$ |  $$ |/$$/  $$ |__     $$  \/$$/  
+$$    $$< $$ |  $$ |  $$ |  $$  $$<   $$    |     $$  $$/   
+$$$$$$$  |$$ |  $$ |  $$ |  $$$$$  \  $$$$$/       $$$$/    
+$$ |  $$ |$$ \__$$ | _$$ |_ $$ |$$  \ $$ |_____     $$ |    
+$$ |  $$ |$$    $$/ / $$   |$$ | $$  |$$       |    $$ |    
+$$/   $$/  $$$$$$/  $$$$$$/ $$/   $$/ $$$$$$$$/     $$/     
+                                                            
                                               
 `,
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2024 By Ruikey",
   ];
 
   setTimeout(
@@ -1172,7 +1177,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Ruikey🥝の小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -2458,12 +2463,6 @@ if (m == 10 && dd <= 3) {//国庆节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 8 && dd == 15) {//搞来玩的，小日子投降
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("小日子已经投降" + (y - 1945).toString() + "年了😃");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
 if (m == 1 && dd == 1) {//元旦节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(y.toString() + "年元旦快乐！🎉");
@@ -2519,15 +2518,9 @@ if (m == 12 && dd == 25) {//圣诞节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 8 && dd == 11) {//站长生日
+if (m == 10 && dd == 15) {//站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐！🥝");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-if (m == 6 && dd == 30) {//小猫咪生日
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
+    Swal.fire("祝站长" + (y - 2023).toString() + "岁生日快乐！🥝");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2788,32 +2781,35 @@ function createtime() {
   var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
-  // 网站诞生时间
-  var grt = new Date("08/09/2022 00:00:00");
+  
+  // 本站诞生时间，从2024年8月10日开始计算
+  var grt = new Date("08/10/2024 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
     hnum = Math.floor(hours);
-  1 == String(hnum).length && (hnum = "0" + hnum);
+  if (hnum < 10) hnum = "0" + hnum;
   var minutes = (now - grt) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
     mnum = Math.floor(minutes);
-  1 == String(mnum).length && (mnum = "0" + mnum);
+  if (mnum < 10) mnum = "0" + mnum;
   var seconds = (now - grt) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
     snum = Math.round(seconds);
-  1 == String(snum).length && (snum = "0" + snum);
+  if (snum < 10) snum = "0" + snum;
+
   let currentTimeHtml = "";
-  (currentTimeHtml =
+  // 根据当前时间显示不同的文本，图片已被删除
+  currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`,
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
+
 // 设置重复执行函数，周期1000ms
 setInterval(() => {
   createtime();
 }, 1000);
-
 /*页脚计时器 end */
 
 //----------------------------------------------------------------
